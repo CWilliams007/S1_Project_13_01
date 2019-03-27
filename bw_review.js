@@ -48,7 +48,7 @@ function init() {
             //  for all values in array stars changes mouse style to pointer
             stars[i].style.cursor = 'pointer';
             // checks the document for all items inside of element span id stars, listens for when mouse enters element, runs functions lightstars
-            stars[i].addEventListener('mouseenter', lightstars);
+            stars[i].addEventListener('mouseenter', lightStars);
       }
       // step 5 c searches document for commentLable id, listens for keyup events in the element, if heard will run update_count function
       document.getElementById('comment').addEventListener('keyup', updateCount);
@@ -58,7 +58,7 @@ function init() {
 }
 
 // step 6 create function lighstars
-function lightstars(e) {
+function lightStars(e) {
       // step 6a, targets alt of the event object. stores it in variable starNumber
       var starNumber = e.target.alt;
       // step 6b declares stars variable with the object collection inside. 
